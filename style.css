@@ -13,11 +13,8 @@ body {
     color: var(--color7);
     background-color: var(--color5);
 }
-a {
+.navigation a {
     text-decoration: none;
-}
-button {
-    cursor: pointer;
 }
 .logo {
     color: var(--color1);
@@ -26,6 +23,7 @@ button {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    text-decoration: none;
 }
 .logo-web {
     color: var(--color2);
@@ -38,25 +36,27 @@ button {
     letter-spacing: 0.02em;
     list-style: none;
 }
-.link {
+.main-nav a {
     color: var(--color7);
 }
-.link:hover,
-.link:focus {
+.main-nav a:hover,
+.main-nav a:focus {
     cursor: pointer;
     color: var(--color2);
 }
+
 .header-contacts {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
-.contact {
+.header-contacts a {
     color: var(--color3);
+    text-decoration: none;
 }
-.contact:hover,
-.contact:focus {
+.header-contacts a:hover,
+.header-contacts a:focus {
     cursor: pointer;
     color: var(--color2);
 }
@@ -64,7 +64,7 @@ button {
 .main-question {
     background-color: var(--color4);
 }
-h1 {
+.main-question h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color5);
@@ -73,7 +73,7 @@ h1 {
     line-height: 1.36;
 }
 
-.order-button {
+.main-question button {
     background: var(--color2);
     color: var(--color5);
     font-weight: 700;
@@ -81,25 +81,27 @@ h1 {
     line-height: 1.88;
     letter-spacing: 0.06em;
     border: none;
+    cursor: pointer;
 }
-.definitions {
+.descriptions-list {
     list-style: none;
 }
-h3 {
+
+.descriptions-list h3 {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.definition {
+.descriptions-list p {
     color: var(--color3);
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
-h2 {
+.specification-images h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -108,46 +110,53 @@ h2 {
 .device-photos {
     list-style: none;
 }
-
+.our-team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+}
 .team-list {
     background: var(--color6);
     list-style: none;
 }
-.employee {
+.team-list li {
     background: var(--color5);
 }
-.name {
+
+.team-list span:nth-child(even) {
     color: var(--color7);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
-.post {
+.team-list span:nth-child(odd) {
     color: var(--color3);
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
 
-footer {
+.main-footer {
     background: var(--color4);
 }
 .logo-studio {
     color: var(--color5);
 }
-address {
+.footer-contacts {
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color5);
 }
-.contact-footer {
+.footer-contacts a {
     color: var(--color3);
+    text-decoration: none;
 }
-.contact-footer:hover,
-.contact-footer:focus {
+.footer-contacts a:hover,
+.footer-contacts a:focus {
     cursor: pointer;
     color: var(--color2);
 }
@@ -155,7 +164,7 @@ address {
 .button-portfolio-list {
     list-style: none;
 }
-.button-name {
+.button-portfolio-list button {
     background-color: var(--color6);
     border: none;
     font-weight: 500;
@@ -163,24 +172,26 @@ address {
     line-height: 1.62;
     letter-spacing: 0.03em;
     color: var(--color7);
+    cursor: pointer;
 }
-.button-name:hover {
+.button-portfolio-list button:hover,
+.button-portfolio-list button:focus {
     color: var(--color5);
     background: var(--color2);
 }
 .portfolio-pages-list {
     list-style: none;
 }
-.portfolio-page {
+.portfolio-pages-list li {
     border: 1px solid #eeeeee;
 }
-.title-page {
+.portfolio-pages-list span:nth-child(even) {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
-.redirection-type {
+.portfolio-pages-list span:nth-child(odd) {
     color: var(--color3);
     font-size: 16px;
     line-height: 1.88;
